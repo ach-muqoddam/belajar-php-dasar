@@ -14,15 +14,16 @@ if ($nilai >= 75 && $absen >= 75) {
 
 // Else If Statement apabila membutuhkan beberapa kondisi
 // Else If bisa lebih dari satu
+// Syntax alternatif Elseif
 
-if ($nilai >= 80 && $absen >= 80) {
+if ($nilai >= 80 && $absen >= 80) :
     echo "Nilai Anda A" . PHP_EOL;
-} else if ($nilai >= 70 && $absen >= 70) {
+elseif ($nilai >= 70 && $absen >= 70) :
     echo "Nilai Anda B" . PHP_EOL;
-} else if ($nilai >= 60 && $absen >= 60) {
+elseif ($nilai >= 60 && $absen >= 60) :
     echo "Nilai Anda C" . PHP_EOL;
-} else if ($nilai >= 50 && $absen >= 50) {
+elseif ($nilai >= 50 && $absen >= 50) :
     echo "NIlai Anda D" . PHP_EOL;
-} else {
+else :
     echo "Nilai Anda E" . PHP_EOL;
-}
+endif;
