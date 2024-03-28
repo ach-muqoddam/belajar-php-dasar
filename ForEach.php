@@ -4,6 +4,10 @@
 // Namun untungnya, di PHP terdapat perulangan foreach, yang bisa digunakan untuk mengakses seluruh data array secara otomatis
 
 $name = ['ACH', 'MUQODDAM'];
+$person = [
+    'first_name'    => 'Ach',
+    'last_name'     => 'Muqoddam',
+];
 
 // perulangan tanpa foreach
 for ($i = 0; $i < count($name); $i++) {
@@ -13,8 +17,14 @@ for ($i = 0; $i < count($name); $i++) {
 echo "\n";
 
 // perulangan menggunakan foreach
-foreach ($name as $names) {
-    echo "Hello, Saya $names" . PHP_EOL;
+foreach ($name as $index => $names) {
+    echo "Data ke $index = $names" . PHP_EOL;
+}
+
+echo "\n";
+
+foreach ($person as $key => $value) {
+    echo "$key : $value" . PHP_EOL;
 }
 
 ?>
